@@ -1,0 +1,44 @@
+### Starting build.
+# Target: main.mli.depends, tags: { extension:mli, file:main.mli, ocaml, ocamldep, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamldep.opt -modules main.mli > main.mli.depends # cached
+# Target: types.mli.depends, tags: { extension:mli, file:types.mli, ocaml, ocamldep, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamldep.opt -modules types.mli > types.mli.depends # cached
+# Target: types.cmi, tags: { byte, compile, extension:mli, file:types.mli, interf, ocaml, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/cameron/.opam/4.03.0/lib/ocaml -o types.cmi types.mli # cached
+# Target: main.cmi, tags: { byte, compile, extension:mli, file:main.mli, interf, ocaml, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/cameron/.opam/4.03.0/lib/ocaml -o main.cmi main.mli # cached
+# Target: main.ml.depends, tags: { extension:ml, file:main.ml, ocaml, ocamldep, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamldep.opt -modules main.ml > main.ml.depends # cached
+# Target: ai.mli.depends, tags: { extension:mli, file:ai.mli, ocaml, ocamldep, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamldep.opt -modules ai.mli > ai.mli.depends # cached
+# Target: gui.mli.depends, tags: { extension:mli, file:gui.mli, ocaml, ocamldep, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamldep.opt -modules gui.mli > gui.mli.depends # cached
+# Target: gui.cmi, tags: { byte, compile, extension:mli, file:gui.mli, interf, ocaml, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/cameron/.opam/4.03.0/lib/ocaml -o gui.cmi gui.mli # cached
+# Target: processor.mli.depends, tags: { extension:mli, file:processor.mli, ocaml, ocamldep, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamldep.opt -modules processor.mli > processor.mli.depends # cached
+# Target: ai.cmi, tags: { byte, compile, extension:mli, file:ai.mli, interf, ocaml, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/cameron/.opam/4.03.0/lib/ocaml -o ai.cmi ai.mli
+# Target: processor.cmi, tags: { byte, compile, extension:mli, file:processor.mli, interf, ocaml, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/cameron/.opam/4.03.0/lib/ocaml -o processor.cmi processor.mli
+# Target: main.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:main.cmo, file:main.ml, implem, ocaml, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/cameron/.opam/4.03.0/lib/ocaml -o main.cmo main.ml # cached
+# Target: ai.ml.depends, tags: { extension:ml, file:ai.ml, ocaml, ocamldep, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamldep.opt -modules ai.ml > ai.ml.depends # cached
+# Target: gui.ml.depends, tags: { extension:ml, file:gui.ml, ocaml, ocamldep, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamldep.opt -modules gui.ml > gui.ml.depends # cached
+# Target: gui.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:gui.cmo, file:gui.ml, implem, ocaml, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/cameron/.opam/4.03.0/lib/ocaml -o gui.cmo gui.ml # cached
+# Target: processor.ml.depends, tags: { extension:ml, file:processor.ml, ocaml, ocamldep, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamldep.opt -modules processor.ml > processor.ml.depends # cached
+# Target: types.ml.depends, tags: { extension:ml, file:types.ml, ocaml, ocamldep, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamldep.opt -modules types.ml > types.ml.depends # cached
+# Target: types.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:types.cmo, file:types.ml, implem, ocaml, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/cameron/.opam/4.03.0/lib/ocaml -o types.cmo types.ml # cached
+# Target: ai.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:ai.cmo, file:ai.ml, implem, ocaml, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/cameron/.opam/4.03.0/lib/ocaml -o ai.cmo ai.ml
+# Target: processor.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:processor.cmo, file:processor.ml, implem, ocaml, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/cameron/.opam/4.03.0/lib/ocaml -o processor.cmo processor.ml
+# Target: main.byte, tags: { byte, dont_link_with, extension:byte, file:main.byte, link, ocaml, program, quiet }
+/Users/cameron/.opam/4.03.0/bin/ocamlc.opt -I /Users/cameron/.opam/4.03.0/lib/ocaml graphics.cma types.cmo ai.cmo gui.cmo processor.cmo main.cmo -o main.byte # cached
+# Compilation successful.
